@@ -74,6 +74,6 @@ public class FormularioPage extends PageObject {
     }
 
     public Boolean verificarEmailNaoCadastraMaisDeUmaVez() {
-        return Objects.equals(browser.findElement(By.xpath("//*[@id=\"tdUserEmail2\"]")).getText(), browser.findElement(By.xpath("//*[@id=\"tdUserEmail1\"]")));
+        return Objects.equals(browser.findElement(By.xpath("//*[@id=\"tdUserEmail2\"]")).getText(), browser.findElement(By.xpath("//*[@id=\"tdUserEmail1\"]")).getText());
     }
 }
